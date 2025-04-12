@@ -1,0 +1,136 @@
+/* Global */
+:root{
+    --bg-color : #101113;
+    --text-color : #feffff;
+    --card-bg-color : #2b333b;
+    --box-border-color : linear-gradient(254deg, #6A0DAD, #0E4D92);
+    --hex : black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    width: 500px;
+}
+
+body{
+    background: var(--bg-color);
+    height: 100vh;
+}
+
+/* Card */
+.container{
+    margin: 1rem;
+    padding: 1rem;
+}
+.color-container .card-header i.arrow::after{
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    content: "\f238";
+}
+.color-container {
+    background: var(--card-bg-color);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 6px;
+}
+.color-container.hide .card-body{
+    display: none !important;
+}
+.color-container.hide .card-header i.arrow::after{
+    content: "\f22c";
+}
+.color-container .card-header{
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem;
+    margin-top: 0;
+    cursor: pointer;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+ /* colors */
+ .color-box {
+    border: 1.5px solid transparent;
+    border-image: var(--box-border-color) 1;
+    width: 55px;
+    height: 55px;
+    padding: 3px;
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.color-box:hover{
+    border: 7px var(--hex) solid;
+    transform: scale(1.05);
+    text-shadow: .5px -.2px .5px var(--hex);
+    transition: .25s;
+}
+.color-box:hover .pre{
+    background: transparent;
+}
+.color-box:hover .hex{
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.color-box .pre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: var(--hex);
+}
+.color-box .hex {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px;
+}
+
+/* other */
+.top-buttons{
+    color: white;
+    font-size: 30px;
+    background: var(--card-bg-color);
+    border: 2px solid green;
+    margin: 1rem;
+    padding: .5rem;
+    position: fixed;
+    border-radius: 10px;
+    width: fit-content;
+    cursor: pointer;
+}
+.top-buttons:hover{
+    transform: scale(.9);
+}
+#color-picker{
+    top: 0;
+    right: 0;
+}
+#github{
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Mach Color",
+    "description": "color repo contains more than 5000 color + color dropper",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "/HTML/index.html",
+        "default_icon": "/Assets/icon.png"
+    }
+}

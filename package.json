@@ -1,0 +1,24 @@
+{
+  "name": "MachColorChrome",
+  "version": "1.0.0",
+  "description": "color repo contains more than 5000 color + color dropper extension for chrome",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheloei/MachColorChrome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cheloei/MachColorChrome/issues"
+  },
+  "homepage": "https://github.com/cheloei/MachColorChrome#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
+}
