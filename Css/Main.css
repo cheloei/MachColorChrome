@@ -14,7 +14,7 @@
 
 html
 {
-    width: 500px;
+    width: 60vw;
 }
 
 body{
@@ -85,29 +85,25 @@ body{
     text-shadow: .5px -.2px .5px var(--hex);
     transition: .25s;
 }
-.color-box:hover .pre{
-    background: transparent;
-}
 .color-box:hover .hex{
     background: white;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
 }
-.color-box .pre{
+.color-box .hex{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     background: var(--hex);
-}
-.color-box .hex {
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 12px;
     text-overflow: ellipsis;
     overflow: hidden;
     padding: 5px;
+    margin: auto;
 }
 
 /* other */

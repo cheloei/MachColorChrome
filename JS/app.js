@@ -140,7 +140,7 @@ function GenerateColorCategory(category) {
     const cardHeader = document.createElement('div')
     cardHeader.classList.add('card-header')
     cardHeader.innerHTML = `
-        <h3>${category}</h3>
+        <h3>${category} <small>( ${categorizedColors[category].length} colors )</small></h3>
         <i class="bi bi-caret-down"></i>
     `
     cardHeader.onclick = function (e) { CardHeaderClick(e) }
@@ -162,9 +162,7 @@ function GenerateColorBox(cardBody, hex) {
     const colorBox = document.createElement('div')
     colorBox.classList.add('color-box')
     colorBox.innerHTML = `
-        <div class="pre">
-            <h3 class="hex">${hex}</h3>
-        </div>
+        <h3 class="hex">${hex}</h3>
     `
     colorBox.style.setProperty('--hex', hex)
     colorBox.onclick = function (e) { ColorBoxClick(e) }
@@ -178,7 +176,7 @@ function CardHeaderClick(e) {
 }
 function ColorBoxClick(e) {
     var el = e.target
-    navigator.clipboard.writeText(el.querySelector('.hex').innerHTML)
+    navigator.clipboard.writeText(el.innerHTML)
     alert('Color Copied Successfully')
 }
 
