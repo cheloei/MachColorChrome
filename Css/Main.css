@@ -12,11 +12,6 @@
     padding: 0;
 }
 
-html
-{
-    width: 60vw;
-}
-
 body{
     background: var(--bg-color);
     height: 100vh;

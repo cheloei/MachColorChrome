@@ -1,3 +1,6 @@
+// set popup size
+document.querySelector('html').style.width = `${screen.width*.6}px`
+
 //#region  Generate Collections
 
 /**
