@@ -17,7 +17,7 @@ This extension is a practical tool designed for front-end developers and designe
 The extension is not yet published on the **Chrome Web Store**. To use it, follow these steps:
 
 1. Download the source code from this repository.
-2. Run npm install command to install required packages in directory
+2. Run `npm install` command to install required packages in directory
 3. Navigate to `chrome://extensions` in your browser.
 4. Enable **Developer Mode** by toggling the switch at the top right corner.
 5. Click on the **Load unpacked** button.

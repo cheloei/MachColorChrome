@@ -1,5 +1,6 @@
 // set popup size
-document.querySelector('html').style.width = `${screen.width*.6}px`
+const HTML = document.querySelector('html')
+HTML.style.width = `${screen.width*.5}px`
 
 //#region  Generate Collections
 
@@ -190,10 +191,11 @@ document.getElementById('color-picker').addEventListener('click', (e) => {
     }
     const eyeDropper = new EyeDropper()
     const abortController = new AbortController()
-
+    HTML.classList.add('close')
     eyeDropper
         .open({ signal: abortController.signal })
         .then((result) => {
+            HTML.classList.remove('close')
             navigator.clipboard.writeText(result.sRGBHex)
             alert("Hex Code Copied")
         })

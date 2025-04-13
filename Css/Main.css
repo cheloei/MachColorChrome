@@ -12,6 +12,12 @@
     padding: 0;
 }
 
+html.close, html.close * {
+    width: 10px !important;
+    height: 10px !important;
+    overflow: hidden !important;
+}
+
 body{
     background: var(--bg-color);
     height: 100vh;
